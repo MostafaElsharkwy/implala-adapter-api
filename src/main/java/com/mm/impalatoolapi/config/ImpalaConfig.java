@@ -29,28 +29,14 @@ public class ImpalaConfig {
 	    public String driverClassName;
 	    public String threadNum;
 	    
-//	    @Autowired
-//	    private DataSource dataSource;
-
-//	    @Autowired
-//	    private PlatformTransactionManager transactionManager;
-
-	 
-	    
+ 
  
 	    
 	    @Bean
 	    public DataSource datasource() {
 	    	System.out.println("  driverClassName " +driverClassName);
 	    	System.out.println("  driverClassName " +url);
-	       /*
-	    	return DataSourceBuilder.create()
-	          .driverClassName(driverClassName)
-	          .url(url)
-	          .username(username)
-	          .password(password)
-	          .build();	
-	        */
+	 
 	    	 DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
 	         dataSourceBuilder.driverClassName(driverClassName);
 	         dataSourceBuilder.url(url);
@@ -59,31 +45,7 @@ public class ImpalaConfig {
 	         DataSource dataSource = dataSourceBuilder.build();
 	    	
 	    	
-//	    	System.setProperty("javax.security.auth.useSubjectCredsOnly", "true");
-//	        System.setProperty("java.security.krb5.conf", "/Users/amarendra/IdeaProjects/spring-boot-impala/src/main/resources/krb5.conf");
-//	        System.setProperty("java.security.auth.login.config","/Users/amarendra/IdeaProjects/spring-boot-impala/src/main/resources/jaas.conf");
-// 
-//	        org.apache.hadoop.conf.Configuration conf = new org.apache.hadoop.conf.Configuration();
-//	        conf.set("hadoop.security.authentication", "kerberos");
-//	        UserGroupInformation.setConfiguration(conf);
-//	        try {
-//				UserGroupInformation.loginUserFromKeytab("impala/quickstart.cloudera@CLOUDERA", "/Users/amarendra/IdeaProjects/spring-boot-impala/src/main/resources/impala.keytab");
-//		
-//	        //UserGroupInformation.loginUserFromKeytab(priniciple, keyTabLocation);
-//
-//
-//
-//	        com.cloudera.impala.jdbc41.DataSource dataSource2 =
-//	                new com.cloudera.impala.jdbc41.DataSource();
-//	        dataSource2.setURL(url);
-//	        
-//
-//	    	} catch (IOException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
-// 
-	    
+  
 	        return dataSource;
 	        
 	         

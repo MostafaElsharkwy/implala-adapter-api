@@ -1,0 +1,19 @@
+server:
+  error:
+   whitelabel:
+     enabled: false 
+spring: 
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss 
+    time-zone: GMT+3
+    default-property-inclusion: non_null
+    serialization:
+      INDENT_OUTPUT: true   
+  messages:
+    basename: messages    
+querylist:
+         query1: |
+                 select * 
+                 from   table1 
+                 where table11=$$param1$$;
+         

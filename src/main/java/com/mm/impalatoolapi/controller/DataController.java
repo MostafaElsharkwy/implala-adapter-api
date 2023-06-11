@@ -1,6 +1,6 @@
 package com.mm.impalatoolapi.controller;
 
-import java.util.ArrayList;
+ 
 import java.util.List;
 import java.util.Map;
 
@@ -19,9 +19,9 @@ import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import com.cloudera.impala.jdbc42.internal.com.cloudera.altus.shaded.javax.ws.rs.Path;
+ 
 import com.mm.impalatoolapi.config.QueryListProperties;
-import com.mm.impalatoolapi.dto.QueryParamsModel;
+ 
 import com.mm.impalatoolapi.service.DataSourceService;
 
 
@@ -29,7 +29,7 @@ import com.mm.impalatoolapi.service.DataSourceService;
 	
 /**
  * 
- * @author tspann
+ * @author mostafa elsharkawy
  *
  */
 @RestController
