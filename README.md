@@ -1,0 +1,1 @@
+# implala-adapter-api
